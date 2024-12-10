@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        display: flex;
+    }
     div{
         display: flex;
         flex-direction: column;
@@ -15,6 +18,22 @@
         display: flex;
         flex-direction: column;
         width: 30%;
+    }
+    img{
+        height: 150px;
+        width: auto;
+    }
+    table{
+        table-layout: initial;
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid black;
+    }
+    td{
+        text-align: center;
+        border: 1px solid gray;
+        background-color: bisque;
+        padding: 15px;
     }
 </style>
 <body>
@@ -81,5 +100,67 @@
                 <input type="submit" id="link" name="link" style="width: 75px;">
             </div>
         </form>
+        <div>
+            <ul>
+                <li><a href="https://music.youtube.com/search?q=chico+cesar" target="_blank">Chico César</a></li>
+                <li><a href="https://music.youtube.com/search?q=chico+science" target="_blank">Chico Science</a></li>
+                <li><a href="https://music.youtube.com/search?q=tassio+gomes" target="_blank">Tassio Gomes</a></li>
+                <li><a href="https://music.youtube.com/search?q=alceu+valen%C3%A7a" target="_blank">Alceu Valença</a></li>
+                <li><a href="https://music.youtube.com/search?q=reginaldo+rossi" target="_blank">Reginal Rossi</a></li>
+            </ul>
+            <ol>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/Animal_Farm" target="_blank">A Revolução dos Bichos (livro)</a>
+                </li>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/1984_(livro)" target="_blank">1984 (livro)</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/br/title/80039517" target="_blank">Os 6 Ridículos (filme)</a>
+                </li>
+                <li>
+                    <a href="https://www.adorocinema.com/filmes/filme-2072/" target="_blank">Perdido no Ninho (filme)</a>
+                </li>
+                <li>
+                    <a href="https://www.adorocinema.com/filmes/filme-19776/" target="_blank">Matrix (filme)</a>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td style="font-size: larger; font-weight: 800;">
+                        Nome
+                    </td>
+                    <td style="font-size: larger; font-weight: 800;">
+                        Foto
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alucard
+                    </td>
+                    <td>
+                        <img src="Alucard.jpg" alt="Foto de Alucard">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Major
+                    </td>
+                    <td>
+                        <img src="Major.jpg" alt="Foto de Major">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Seras Victorias
+                    </td>
+                    <td>
+                        <img src="Seras.jpg" alt="Foto de Seras Victorias">
+                    </td>
+                </tr>
+            </table>
+        </div>
 </body>
 </html>
