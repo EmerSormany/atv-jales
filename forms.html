@@ -1,1 +1,70 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+</style>
+<body>
+        <form action="" method="get">
+            <div >
+                <label for="name">Qual o seu nome: </label>
+                <input type="text" name="name" required>
+            </div>
+            <div >
+                <label for="email">Qual o seu email: </label>
+                <input type="email" name="email" required>
+            </div>
+            <div >
+                <label for="senha">Qual a sua senha: </label>
+                <input type="password" name="senha" required>
+            </div>
+            <div >
+                <label for="nascimento">Nascimento: </label>
+                <input type="datetime-local" name="nascimento" required>
+            </div>
+            <div>
+                <label for="sexo">Qual seu sexo: </label>
+                <div style="flex-direction: row; margin-bottom: 0;">
+                    <input type="radio" name="sexo" value="masculino" id="masculino" required>
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div style="flex-direction: row; margin-top: 0;">
+                    <input type="radio" name="sexo" value="feminino" id="femino" required>
+                    <label for="femino">Feminino</label>
+                </div>
+            </div>
+            <div>
+            <label for="sexo">Quais seus hobbies: </label>
+                <div style="flex-direction: row; margin-bottom: 0;">
+                    <input type="checkbox" name="sexo" value="masculino" id="ler" required>
+                    <label for="ler">Ler</label>
+                </div>
+                <div style="flex-direction: row; margin-top: 0; margin-bottom: 0;">
+                    <input type="checkbox" name="sexo" value="feminino" id="filmes" required>
+                    <label for="filmes">Filmes</label>
+                </div>
+                <div style="flex-direction: row; margin-top: 0;">
+                    <input type="checkbox" name="sexo" value="feminino" id="video-game" required>
+                    <label for="video-game">Video Games</label>
+                </div>
+            </div>
+            <div>
+                <label for="favcolor">Selecione sua cor favorita:</label>
+                <input type="color" id="favcolor" name="favcolor">
+            </div>
+        </form>
+</body>
+</html>
