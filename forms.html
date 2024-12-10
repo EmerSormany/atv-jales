@@ -14,7 +14,7 @@
     form{
         display: flex;
         flex-direction: column;
-        width: 20%;
+        width: 30%;
     }
 </style>
 <body>
@@ -33,7 +33,7 @@
             </div>
             <div >
                 <label for="nascimento">Nascimento: </label>
-                <input type="datetime-local" name="nascimento" required>
+                <input type="datetime-local" name="nascimento" required style="width: 40%;">
             </div>
             <div>
                 <label for="sexo">Qual seu sexo: </label>
@@ -64,6 +64,21 @@
             <div>
                 <label for="favcolor">Selecione sua cor favorita:</label>
                 <input type="color" id="favcolor" name="favcolor">
+            </div>
+            <div>
+                <label for="nota">Qual nota você dá pro seu fim de semana (de 1 a 10):</label>
+                <input type="number" id="nota" name="nota" min="0" max="10" style="width: 12%;">
+            </div>
+            <div>
+                <label for="link">Qual o link da sua página:</label>
+                <input type="url" id="link" name="link">
+            </div>
+            <div>
+                <label for="link">Que horas são:</label>
+                <input type="time" id="link" name="link" style="width: 70px;">
+            </div>
+            <div>
+                <input type="submit" id="link" name="link" style="width: 75px;">
             </div>
         </form>
 </body>
